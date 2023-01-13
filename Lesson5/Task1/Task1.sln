@@ -7,6 +7,10 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Task1", "Task1.pyproj", "{C
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Task2", "..\Task5\Task2.pyproj", "{18620308-3D96-40AF-8C7A-9171611F952D}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Echo_bot", "..\Echo_bot\Echo_bot.pyproj", "{F10F6EB7-EA4C-4647-B444-A615175E683F}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Lexture3", "..\Lexture3\Lexture3.pyproj", "{3EE930F5-062C-4704-9FC5-BDB5AAB1E40E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,10 @@ Global
 		{C53C18C2-B36B-4E2E-B57A-07F9BEBEFBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18620308-3D96-40AF-8C7A-9171611F952D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{18620308-3D96-40AF-8C7A-9171611F952D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10F6EB7-EA4C-4647-B444-A615175E683F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10F6EB7-EA4C-4647-B444-A615175E683F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE930F5-062C-4704-9FC5-BDB5AAB1E40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE930F5-062C-4704-9FC5-BDB5AAB1E40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
