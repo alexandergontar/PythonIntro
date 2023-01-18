@@ -1,5 +1,5 @@
-fileName = 'tel.txt'
-
+fileName = 'tel.txt' # файл с данными
+# базовые функции
 def writeFile(file_name, users):
     with open(file_name, 'w') as data:
         for user in users:
@@ -42,7 +42,7 @@ def find_by_phone(userList, phone):
 
 
 users = readFile(fileName)
-
+# операции меню пользователя
 def add_user():    
         last_name = input("Фамилия: ")
         first_name = input("Имя: ")
@@ -54,7 +54,7 @@ def add_user():
         print("Добавлен пользователь: ", user)
 
 def delete_user():
-    i = int(input('Введите номер пользователя: '))
+    i = int(input('Введите порядковый номер пользователя: '))
     print(users[i-1])
     usr =  users[i-1]
     users.remove(usr)    
@@ -76,7 +76,7 @@ def edit_phone(userList, phone):
              break
     if count == 0:
         print('номер не найден')
-
+# создаем список операций (псевдо-switch)
 ops = list()
 def op1():
     print(' Полный список')
@@ -106,7 +106,7 @@ ops.append(op5)
 ops.append(op6)
 def do_op(op):
     op()
-
+# UI
 def display_operations():
     print('\nРабота с телефонным справочником')
     print('1 - Показать все записи')
