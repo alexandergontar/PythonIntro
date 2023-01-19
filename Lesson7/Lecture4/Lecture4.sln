@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Lecture4", "Lecture4.pyproj", "{61EC5ECA-DFF2-4EED-A8F7-6A38BC4EF6DE}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Climat_station", "..\Climat_station\Climat_station.pyproj", "{B824ABE3-FEE0-4C46-9003-9AE447B207A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61EC5ECA-DFF2-4EED-A8F7-6A38BC4EF6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EC5ECA-DFF2-4EED-A8F7-6A38BC4EF6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B824ABE3-FEE0-4C46-9003-9AE447B207A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B824ABE3-FEE0-4C46-9003-9AE447B207A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ABB10B1-8838-4B77-BF7D-3DAA4FCAEEB2}
+	EndGlobalSection
+EndGlobal
