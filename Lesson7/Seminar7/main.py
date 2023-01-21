@@ -3,8 +3,7 @@ import function as fn
 import UI
 
 while True:
-    try:
-      #x = UI.menu()
+    try:      
       if UI.menu():
           break
     except:

@@ -28,25 +28,44 @@ def add_line(lines, line):
     return lines
 
 
-def print_bus():
+def get_buses():
     return read_data_from_file('bus.txt')
-def print_driver():
-    return read_data_from_file('driver.txt')
-def print_route():
+def get_drivers():
+    return read_data_from_file('driver.csv')
+def get_routes():
     return read_data_from_file('route.txt')
 
 def find_by_id(lines : list(), id):      
        count = 0
        for line in lines:
            if line[0] == id:
-               count+=1               
+               count+=1
+               return line
        if count == 0:           
            return None 
        else:
            return line
 
-def add_bus():
-    lines = print_bus()
+def delete(lines : list(), path, id):
+    item = find_by_id(lines, id)
+    if item != None:
+        lines.remove(item)
+        save_as_csv(path, lines)
+    else:
+        print('id not found')
+def delete_from_list():
+    pathes = ['bus.txt', 'driver.csv', 'route.txt']
+    try:
+        n = int(input('Выберите список - (1 - автобусы, 2 - водители, 3 - маршруты): ')) - 1
+        path = pathes[n]
+    except:
+        print('ошибка ввода')
+        return
+    lines = read_data_from_file(path)
+    delete(lines, path, input('Id = '))
+
+def add_bus():          
+    lines = get_buses()
     line = list()
     bus_id = input("Bus Id: ")
     if find_by_id(lines, bus_id) != None:
@@ -60,7 +79,7 @@ def add_bus():
 
 
 def add_driver():
-    lines = print_driver()
+    lines = get_drivers()
     line = list()
     driver_id = input("Driver Id: ")
     if find_by_id(lines, driver_id) != None:
@@ -69,10 +88,10 @@ def add_driver():
     line.append(driver_id)
     line.append(input("Name: "))
     lines.append(line)    
-    save_as_csv('driver.txt', lines)
+    save_as_csv('driver.csv', lines)
 
 def add_route():
-    lines = print_route()
+    lines = get_routes()
     line = list()
     route_id = input("Route Id: ")
     if find_by_id(lines, route_id) != None:
