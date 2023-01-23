@@ -35,6 +35,7 @@
   <ItemGroup>
     <Content Include="bus.txt" />
     <Content Include="driver.csv" />
+    <Content Include="Readme.md" />
     <Content Include="route.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
