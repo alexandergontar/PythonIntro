@@ -131,4 +131,14 @@ for i in range(1, len(m) - 1, 2):
 print(m[i], m[i + 1])
 print(m2)
 print(result)
+============================
+def calc_priorities(m : []):
+     for i in range(1, len(m) - 1, 2):
+       if m[i] == '*' or m[i] == '/':
+        result = calc(float(m[i - 1]), float(m[i + 1]), m[i])
+        m[i-1]=' '
+        m[i]=str(result)
+        m[i+1]=' '         
+     m = list(filter(lambda a: a != ' ', m))     
+     return m
 
