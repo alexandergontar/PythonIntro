@@ -23,8 +23,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="bot_commands.py" />
+    <Compile Include="conf.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Lecture5.py" />
-    <Compile Include="spy.py" />
+    <Compile Include="RPN.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
