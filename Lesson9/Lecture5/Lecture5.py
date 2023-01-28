@@ -1,33 +1,37 @@
-import telebot
+#import telebot
 import wikipedia
 import re
 import os
-from isOdd import isOdd
-from progress.bar import Bar
-import progress
-import time
-import emoji
-import matplotlib.pyplot as plt
-import numpy as np
-
-
-
+import spy
+import bot_commands
+#import time
+import telebot
+#import telegram
+#import bot_commands as bc
+#from telegram import Update
+#from telegram.ext import Updater,  CommandHandler, CallbackContext
+#from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+#from bot_commands import *
+#from telegram import Update
+#from telegram.ext import Updater, CommandHandler, CallbackContext
+#from bot_commands import *
 TOKEN = '5923725347:AAHJXDY76Dghdu5bU_doA9C0awRhy0D4zDk'
+#updater = Updater(TOKEN)
+#app = ApplicationBuilder().token('5923725347:AAHJXDY76Dghdu5bU_doA9C0awRhy0D4zDk').build()
 bot = telebot.TeleBot(TOKEN)
-wikipedia.set_lang("ru") # Устанавливаем русский язык в Wikipedia
-                   
-#print(isOdd(3))
-#print(isOdd(0))
 
-#bar = Bar('Processing',max = 20)
-#for i in range(20):
-#    time.sleep(1)
-    #print('#', end = "")
-#    bar.next()
-#bar.finish()
-#print(emoji.emojize('Python is :thumbs_up:'))
-np.random.seed(19680801)
 
-plt.rcdefaults()
-fig, ax = plt.subplots()
+@bot.message_handler(commands=[ 'help'])
+def send_welcome(message):
+    bot.reply_to(message, 'Добро пожаловать, напишите через пробел 2 цифры: ')
+
+@bot.message_handler(commands=["start"])
+def start(m, res=False):
+    bot.send_message(m.chat.id, 'Введите через пробел 2 цифры: ')
+@bot.message_handler(content_types=["text"])
+def run_commands(message): # Название функции не играет никакой роли    
+    bot.add_message_handler(bot_commands.sum_a_b(message))
+
+bot.infinity_polling()
+
 input()

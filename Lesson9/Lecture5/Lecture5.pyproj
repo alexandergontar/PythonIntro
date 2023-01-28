@@ -22,7 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="bot_commands.py" />
     <Compile Include="Lecture5.py" />
+    <Compile Include="spy.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
