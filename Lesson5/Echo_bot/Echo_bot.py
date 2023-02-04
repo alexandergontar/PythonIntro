@@ -5,7 +5,7 @@ import os
 TOKEN = '5923725347:AAHJXDY76Dghdu5bU_doA9C0awRhy0D4zDk'
 bot = telebot.TeleBot(TOKEN)
 wikipedia.set_lang("ru") # Устанавливаем русский язык в Wikipedia
-
+os.system('cls')
 def getwiki(s):
     try:
         data = wikipedia.page(s)
@@ -42,4 +42,4 @@ try:
 except:
     print('polling failed, restart required')
 
-input()
+

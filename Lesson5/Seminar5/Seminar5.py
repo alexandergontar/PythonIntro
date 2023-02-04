@@ -1,4 +1,6 @@
 from math import pi
+import os
+
 # S=pi*a*b
 print("задача про орбиты")
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
